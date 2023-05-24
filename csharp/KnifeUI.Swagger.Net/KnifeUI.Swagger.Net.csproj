@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <Description>集成Knife4j、swagger、asp.net core搭建的后台api文档，运行平台：.net core。原作者：jackletter，由于原作者长时间未更新，特此建立此副本。</Description>
+	  <PackageProjectUrl>https://gitee.com/jackletter/knife-ui_-swagger_-net</PackageProjectUrl>
+	  <RepositoryUrl>https://gitee.com/jackletter/knife-ui_-swagger_-net.git</RepositoryUrl>
+	  <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	  <Version>1.0.0</Version>
+  </PropertyGroup>
+	<ItemGroup>
+		<EmbeddedResource Include="../../knife4j-vue/dist/**/*">
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+  </ItemGroup>
+</Project>
